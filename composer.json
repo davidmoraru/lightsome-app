@@ -11,7 +11,7 @@
         "optimize-autoloader": true
     },
     "autoload": {
-        "files": ["app/Helpers/class_autoload.php","app/routes.php"],
+        "files": ["app/class_autoload.php", "app/helpers/custom_functions.php", "app/routes.php"],
         "psr-4": {
             "App\\": "app/" 
         }

@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "davidmoraru/lightsome",
-            "version": "v1.0.0",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmoraru/lightsome.git",
-                "reference": "d462eb53e4a764b882e66f3794cdbf23decf2025"
+                "reference": "850c78275d0cb23a04b604f2686961096192b017"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmoraru/lightsome/zipball/d462eb53e4a764b882e66f3794cdbf23decf2025",
-                "reference": "d462eb53e4a764b882e66f3794cdbf23decf2025",
+                "url": "https://api.github.com/repos/davidmoraru/lightsome/zipball/850c78275d0cb23a04b604f2686961096192b017",
+                "reference": "850c78275d0cb23a04b604f2686961096192b017",
                 "shasum": ""
             },
             "require": {
@@ -26,11 +26,14 @@
             "type": "library",
             "autoload": {
                 "classmap": [
-                    "src/Lightsome.php"
+                    "src/Some.php"
                 ],
                 "files": [
                     "src/functions.php"
-                ]
+                ],
+                "psr-4": {
+                    "Light\\": "src/"
+                }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -48,7 +51,7 @@
                 "framework",
                 "micro"
             ],
-            "time": "2020-03-24T01:16:06+00:00"
+            "time": "2020-03-24T02:21:27+00:00"
         },
         {
             "name": "nategood/httpful",

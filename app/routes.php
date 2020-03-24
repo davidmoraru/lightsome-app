@@ -1,7 +1,8 @@
 <?php
-
+use Light\Some as Lightsome;
+use Light\View;
 // Use / for the main/index page.
-get('/', function(){
+get('/', function() {
     echo "Front page";
 });
 
@@ -21,6 +22,6 @@ post('/contact', function(){
 });
 
 // Checking if a route has been matched
-if (!Nanite::$routeProccessed) {
-    // 404 page here
+if (!Lightsome::$routeProccessed) {
+    return View::render('404', ['response' => errorpage(404)]);
 }

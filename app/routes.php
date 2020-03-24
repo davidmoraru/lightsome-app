@@ -3,7 +3,7 @@ use Light\Some as Lightsome;
 use Light\View;
 // Use / for the main/index page.
 get('/', function() {
-    echo "Front page";
+    return View::render('default');
 });
 
 // All routes start with /

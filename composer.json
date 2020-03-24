@@ -1,0 +1,26 @@
+{
+    "name": "adevi/lightsome-app",
+    "description": "davidmoraru/lightsome",
+    "type": "project",
+    "require": {
+        "davidmoraru/lightsome": "^1.0",
+        "vlucas/phpdotenv": "^4.1",
+        "nategood/httpful": "^0.3.2"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "files": ["app/Helpers/class_autoload.php","app/routes.php"],
+        "psr-4": {
+            "App\\": "app/" 
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Andrei",
+            "email": "alinmoraru980@gmail.com"
+        }
+    ]
+}
